@@ -1,0 +1,16 @@
+{
+    "name": "vendor/php_pdf_generator",
+    "description": "A PHP project for generating PDF documents using the phpwkhtmltopdf library, integrating HTML to PDF conversion capabilities into web applications.",
+    "type": "project",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "ali arslan",
+            "email": "aliarslanofficial@gmail.com"
+        }
+    ],
+    "require": {
+        "mikehaertl/phpwkhtmltopdf": "^2.5",
+        "dompdf/dompdf": "^3.0"
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoluComp</title>
+    <style>
+         body, html {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .bg-danger{
+            background-color: #f44336;
+        }
+        .bg-dark{
+            background-color: #000000;
+        }
+        .fw-bold{
+            font-weight: bold;
+        }
+        .top-header {
+            border-bottom: 1px solid #17a2b8;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            /* padding: 5px 20px 0px; */
+            text-align: left;
+        }
+        .logo {
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-bottom: 10px;
+        }
+        .section-main3{
+            padding: 10px 120px 0px 120px;
+        }
+        .title3{
+            margin-bottom: 20px;
+        }
+        .image1{
+            text-align: center;
+            border-top: 1px solid #000000;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000;
+            padding: 2px 150px 5px 150px;
+            height: 400px;
+            
+        }
+        .image2{
+            text-align: center;
+            border-top: 1px solid #000000;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000;
+            padding: 0px 150px 5px 150px;
+            height: 400px;
+        }
+        .image1 img,
+        .image2 img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            margin: 0px 0px 5px 0px;
+            letter-spacing: 1px;
+            color: #17a2b8;
+            text-align: left;
+        }
+        p{
+            margin: 0px;
+            font-size: 13px;
+        }
+        ol li{
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        .gap{
+            padding: 5px 0px;
+        }
+        .footer1 {
+            border-top: 1px solid #17a2b8;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 30px;
+        }
+        .footer2 {
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border: none;
+        }
+        .footer3 {
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-bottom: 5px;
+            border: none;
+        }
+        .footer-content {
+            width: 100%;
+            border-collapse: collapse;
+            border: none; /* Remove all borders */
+        }
+
+        .footer-content td {
+            width: 33%;
+            text-align: center;
+            border: none; /* Remove borders from cells */
+        }
+
+        .footer-content tr {
+            border: none; /* Remove borders from rows */
+        }
+        .footer-normal-font{
+            font-size: 10px;
+        }
+        .footer-big-font{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-header">
+        <img class="logo" src="{{logo}}" alt="">
+    </div>
+
+    <div class="section-main3">
+        <div class="title3">
+            <h3>
+                {{heading}} 
+            </h3>
+        </div>
+        <div class="images-container">
+            <div class="image1 image-holder">
+                <img class="border_none" id="img1" src="{{img1}}" alt="">
+            </div>
+            <div class="image2 image-holder">
+                <img class="border_none" id="img2" src="{{img2}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer3">
+        <table class="footer-content">
+            <tr>
+                <td class="footer-normal-font">{{count}}</td>
+                <td class="footer-big-font" id="footer_info">CONFIDENTIAL</td>
+                <td class="footer-normal-font">{{today_date}}</td>
+            </tr>
+        </table>
+    </footer>
+    <!-- <script>
+        // Check if an image has src attribute, if not hide it
+        const image1 = document.getElementById("img1");
+        if (!image1.getAttribute('src')) {
+            image1.style.display = 'none';
+        }
+
+        // Check if image2 has src attribute, if not hide it
+        const image2 = document.getElementById("img2");
+        if (!image2.getAttribute('src')) {
+            image2.style.display = 'none';
+        }
+    </script>
+     -->
+</body>
+</html>
